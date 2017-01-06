@@ -15,7 +15,7 @@
 <meta property="og:description" content="2048算法及其JavaScript实现2048是一款风靡一时的小游戏，它操作简单，玩法也简单，属于玩的时候根本停不下来的游戏。
 2048游戏的算法是比较简单的， 实现这个算法有助于更好地理解JavaScript数组的相关内容。
 算法概述2048的界面看起来像是一个矩阵，这样的结构最适合用二维数组来描述了。一般来说，二位数组的遍历是二重循环，行列计算和比较做起来都比较容易，如果使用一位数组的话，处">
-<meta property="og:updated_time" content="2017-01-06T02:42:53.358Z">
+<meta property="og:updated_time" content="2017-01-06T02:53:42.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2048算法及其实现">
 <meta name="twitter:description" content="2048算法及其JavaScript实现2048是一款风靡一时的小游戏，它操作简单，玩法也简单，属于玩的时候根本停不下来的游戏。
@@ -95,7 +95,7 @@
 <h3 id="游戏结束判定"><a href="#游戏结束判定" class="headerlink" title="游戏结束判定"></a>游戏结束判定</h3><p>游戏结束，意味着既不可以向4个方向移动，也不可合并，此时，没有路可走了。因为合并之前是先移动，可移动的条件中包含可合并，所以，直接判断能不能向四个方向中的某个方向移动就决定了游戏是否结束。</p>
 <p>上面已经展示了判定移动的代码，如果将判定代码封装成函数，那么判定游戏结束可以表示成以下方式：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">isGameOver</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> canMove(matrix, <span class="string">'left'</span>) ||</div><div class="line">           canMove(matrix, <span class="string">'right'</span>) ||</div><div class="line">           canMove(matrix, <span class="string">'up'</span>) ||</div><div class="line">           canMove(matrix, <span class="string">'down'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><p>相关源代码已经提交到github上，[<a href="https://github.com/dlulu/game-2048]，" target="_blank" rel="external">https://github.com/dlulu/game-2048]，</a> 克隆或下载下来玩耍吧。</p>
+<h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><p>相关源代码已经提交到github上， <a href="https://github.com/dlulu/game-2048" target="_blank" rel="external">https://github.com/dlulu/game-2048</a> ，克隆或下载下来玩耍吧。</p>
 
       
 
